@@ -1,0 +1,59 @@
+<mat-card>
+  <mat-card-title-group>
+    <img src="./../../../assets/imagem/juntos.png" width="400px" height="300px" alt="Juntos">
+  </mat-card-title-group>
+  <mat-card-content>
+    <form [formGroup]="form">
+      <div>
+        <div>
+          <mat-form-field class="paddingTen">
+            <input type="text" matInput placeholder="E-mail" formControlName="email">
+            <mat-error>E-mail é
+              <strong>obrigatório</strong>
+            </mat-error>
+            <mat-hint align="start">Por favor digite o
+              <strong>E-mail</strong>
+            </mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <mat-form-field class="paddingTen">
+            <input type="password" matInput placeholder="Senha" formControlName="senha">
+            <mat-error>Senha é
+              <strong>obrigatório</strong>
+            </mat-error>
+            <mat-hint align="start">Por favor digite a
+              <strong>Senha</strong>
+            </mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+
+    </form>
+  </mat-card-content>
+
+  <div class="bottom-card-juntos">
+    <mat-card-content>
+      <div>
+        <a class="a-juntos" (click)="implementandoFuncao()"> Esqueceu sua senha?</a>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions class="left-5">
+      <button mat-raised-button class="buttonLogin" (click)="onSubmit()" color="primary">
+        <span class="aling-left">Entrar</span>
+        <mat-icon class="aling-right">arrow_forward</mat-icon>
+      </button>
+    </mat-card-actions>
+
+    <mat-card-content>
+      <div>
+        <a class="a-juntos" (click)="implementandoFuncao()"> Sou novo aqui</a>
+      </div>
+    </mat-card-content>
+  </div>
+
+</mat-card>
